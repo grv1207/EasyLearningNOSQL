@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Main page</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="static/main.css">
+      <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>lo
+            <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Easy Learning</a>
+          </div>
+           <div class="navbar-collapse collapse">
+               <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>       
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">login</li>
+                <li><a href="login" onClick="signout_clicked">SignOut</a></li>
+              </ul>
+            </li>            
+          </ul>
+          </div>
+       </div>
+</div>
+  
+   
+    <div class="list-group ">
+           <!--<div class="subjectlist"> -->
+    <a href="#LO1" id="Introduction to Machine learning" class="list-group-item " data-toggle="modal" >Introduction to Machine learning </a>
+    <a href="#LO2" id = "Supervised Vs Unsupervised" class="list-group-item" data-toggle="modal"> Supervised Vs Unsupervised </a>
+    <a href="#LO3" id = "Linear Regression" class="list-group-item"  data-toggle="modal">Linear Regress</a>
+    <a href="#LO4" id = "K-Means Clustering" class="list-group-item" data-toggle="modal">K-Means Clustering </a>
+    <a href="#LO5" id = "Principle Component Analysis" class="list-group-item" data-toggle="modal">Principle Component Analysis </a>
+    <a href="#LO6" id = "Fischer's Linear Discriminant Analysis" class="list-group-item" data-toggle="modal">Fischer's Linear Discriminant Analysis </a>
+    <a href="#LO7" id = "Bayes Decision Theory" class="list-group-item" data-toggle="modal">Bayes Decision Theory </a>
+    <a href="#LO8" id = "Graphical Model" class="list-group-item" data-toggle="modal">Graphical Model </a>
+    <a href="#LO9" id = "Model Selection" class="list-group-item" data-toggle="modal">Model Selection </a>
+    <a href="#LO10" id = "Learning Theory" class="list-group-item" data-toggle="modal">Learning Theory </a>
+    <a href="#LO11" id = "Support Vector Machine" class="list-group-item" data-toggle="modal">Support Vector Machine </a>
+    <a href="#LO12" id = "Neural Network" class="list-group-item" data-toggle="modal">Neural Network </a>
+      </div>
+        <!--</div> -->
+           <div id="Trendingdiv"></div>
+     
+     
+       <div id="Recomdiv"></div>
+      
+
+      
+      <div class="modal fade" id="LO1" role="dialog">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4>Introduction to Machine learning</h4>
+                        
+                        </div>
+                  <div class="modal-body">
+                      
+    				<iframe id="LO1-1" width="560" height="315" src="https://www.youtube.com/embed/fC7V8QsPBec" frameborder="0" allowfullscreen></iframe>
+    			</div>
+                  <div class="modal-footer">
+    				<a class="btn btn-primary" data-dismiss="modal">Close</a>
+                      <a href="#" id="Introduction to Machine learning" class="btn btn-primary pull-left" onClick= "likebtn_click(this.id)">
+                          <span class="glyphicon glyphicon-thumbs-up"></span> Like </a>
+    			</div>
+              </div>
+          </div>
+      </div>
+      
+      
+      <div class="modal fade" id="LO2" role="dialog">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4>Supervised Vs Unsupervised</h4>
+                        
+                        </div>
+                  <div class="modal-body">
+                      
+    				<iframe  width="560" height="315" src="https://www.youtube.com/embed/GPAfjWsKmmQ" frameborder="0" allowfullscreen></iframe>
+    			</div>
+                  <div class="modal-footer">
+    				<a class="btn btn-primary" data-dismiss="modal">Close</a>
+                      <a href="#" id = "Supervised Vs Unsupervised" class="btn btn-primary pull-left" onClick= "likebtn_click(this.id)">
+                          <span class="glyphicon glyphicon-thumbs-up"></span> Like </a>
+    			</div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="modal fade" id="LO3" role="dialog">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4>Linear Regress</h4>
+                        
+                        </div>
+                  <div class="modal-body">
+                      
+            <iframe  width="560" height="315" src="https://www.youtube.com/embed/zPG4NjIkCjc" frameborder="0" allowfullscreen></iframe>
+          </div>
+                  <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">Close</a>
+                      <a href="#" id = "Linear Regression" class="btn btn-primary pull-left" onClick= "likebtn_click(this.id)">
+                          <span class="glyphicon glyphicon-thumbs-up"></span> Like </a>
+          </div>
+              </div>
+          </div>
+      </div>
+
+
+
+      <div class="modal fade" id="LO4" role="dialog">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4>K-Means Clustering</h4>
+                        
+                        </div>
+                  <div class="modal-body">
+                      
+            <iframe  width="560" height="315" src="https://www.youtube.com/embed/RD0nNK51Fp8" frameborder="0" allowfullscreen></iframe>
+          </div>
+                  <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">Close</a>
+                      <a href="#" id = "K-Means Clustering" class="btn btn-primary pull-left" onClick= "likebtn_click(this.id)">
+                          <span class="glyphicon glyphicon-thumbs-up"></span> Like </a>
+          </div>
+              </div>
+          </div>
+      </div>
+      
+
+
+
+      <div class="modal fade" id="LO5" role="dialog">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4>Principle Component Analysis</h4>
+                        
+                        </div>
+                  <div class="modal-body">
+                      
+            <iframe  width="560" height="315" src="https://www.youtube.com/embed/kw9R0nD69OU" frameborder="0" allowfullscreen></iframe>
+          </div>
+                  <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">Close</a>
+                      <a href="#" id = "Principle Component Analysis" class="btn btn-primary pull-left" onClick= "likebtn_click(this.id)">
+                          <span class="glyphicon glyphicon-thumbs-up"></span> Like </a>
+          </div>
+              </div>
+          </div>
+      </div>
+
+
+
+
+
+      <div class="modal fade" id="LO6" role="dialog">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4>Fischer's Linear Discriminant Analysis</h4>
+                        
+                        </div>
+                  <div class="modal-body">
+                      
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/T26-kN54gJY" frameborder="0" allowfullscreen></iframe>
+          </div>
+                  <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">Close</a>
+                      <a href="#" id = "Fischer's Linear Discriminant Analysis" class="btn btn-primary pull-left" onClick= "likebtn_click(this.id)">
+                          <span class="glyphicon glyphicon-thumbs-up"></span> Like </a>
+          </div>
+              </div>
+          </div>
+      </div>
+
+
+
+
+      <div class="modal fade" id="LO7" role="dialog">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4>Bayes Decision Theory</h4>
+                        
+                        </div>
+                  <div class="modal-body">
+                      
+            <iframe  width="560" height="315" src="https://www.youtube.com/embed/Lveq5dIaiXY" frameborder="0" allowfullscreen></iframe>
+          </div>
+                  <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">Close</a>
+                      <a href="#" id = "Bayes Decision Theory" class="btn btn-primary pull-left" onClick= "likebtn_click(this.id)">
+                          <span class="glyphicon glyphicon-thumbs-up"></span> Like </a>
+          </div>
+              </div>
+          </div>
+      </div>
+
+
+
+      <div class="modal fade" id="LO8" role="dialog">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4>Graphicak Model</h4>
+                        
+                        </div>
+                  <div class="modal-body">
+                      
+            <iframe  width="560" height="315" src="https://www.youtube.com/embed/ju1Grt2hdko" frameborder="0" allowfullscreen></iframe>
+          </div>
+                  <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">Close</a>
+                      <a href="#" id = "Graphical Model" class="btn btn-primary pull-left" onClick= "likebtn_click(this.id)">
+                          <span class="glyphicon glyphicon-thumbs-up"></span> Like </a>
+          </div>
+              </div>
+          </div>
+      </div>
+
+
+
+      <div class="modal fade" id="LO9" role="dialog">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4>Model Selection</h4>
+                        
+                        </div>
+                  <div class="modal-body">
+                      
+            <iframe  width="560" height="315" src="https://www.youtube.com/embed/rW0B8o7JtFk" frameborder="0" allowfullscreen></iframe>
+          </div>
+                  <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">Close</a>
+                      <a href="#" id = "Model Selection" class="btn btn-primary pull-left" onClick= "likebtn_click(this.id)">
+                          <span class="glyphicon glyphicon-thumbs-up"></span> Like </a>
+          </div>
+              </div>
+          </div>
+      </div>
+
+
+
+      <div class="modal fade" id="LO10" role="dialog">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4>Learning Theory</h4>
+                        
+                        </div>
+                  <div class="modal-body">
+                      
+            <iframe  width="560" height="315" src="https://www.youtube.com/embed/KYDYzR-ZWRQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+                  <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">Close</a>
+                      <a href="#" id = "Learning Theory" class="btn btn-primary pull-left" onClick= "likebtn_click(this.id)">
+                          <span class="glyphicon glyphicon-thumbs-up"></span> Like </a>
+          </div>
+              </div>
+          </div>
+      </div>
+
+
+       <div class="modal fade" id="LO11" role="dialog">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4>Support Vector Machine</h4>
+                        
+                        </div>
+                  <div class="modal-body">
+                      
+            <iframe  width="560" height="315" src="https://www.youtube.com/embed/_PwhiWxHK8o" frameborder="0" allowfullscreen></iframe>
+          </div>
+                  <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">Close</a>
+                      <a href="#" id = "Support Vector Machine" class="btn btn-primary pull-left" onClick= "likebtn_click(this.id)">
+                          <span class="glyphicon glyphicon-thumbs-up"></span> Like </a>
+          </div>
+              </div>
+          </div>
+      </div>
+
+
+   <div class="modal fade" id="LO12" role="dialog">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4>Neural Network</h4>
+
+                        </div>
+                  <div class="modal-body">
+
+    				 <object data='http://www2.econ.iastate.edu/tesfatsi/NeuralNetworks.CheungCannonNotes.pdf' type='application/pdf' width="840" height="500" ></object>
+    			</div>
+                  <div class="modal-footer">
+    				<a class="btn btn-primary" data-dismiss="modal">Close</a>
+                      <a href="#" id = "Neural Network" class="btn btn-primary pull-left" onClick= "likebtn_click(this.id)">
+                          <span class="glyphicon glyphicon-thumbs-up"></span> Like </a>
+    			</div>
+              </div>
+          </div>
+      </div>
+
+
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <script>
+ var dict;
+  $(document).ready(function() {
+
+        var url = $(location).attr('href');
+        //var mystring = url.substr(url.indexOf("?") + 1);
+        //var userstring = mystring.substr(mystring.indexOf("=") + 1);
+        //var myjson;
+        var userstring = getUrlParameter("username");
+        var uid = getUrlParameter("uid");
+        var myjson;
+        var urlstring = "http://127.0.0.1:5000/neo4j/" + userstring;
+
+        //var urlstring = "http://127.0.0.1:5000/neo4j/grv"
+        $.getJSON(urlstring,function(json){
+                    myjson = json;
+
+                    subjlist = []
+                    var panel = $('<div class="panel panel-default" />').appendTo('#Trendingdiv');
+                    var heading = $('<div class="panel-heading" />').appendTo(panel);
+                    heading.append('<h3 class="panel-title">Top Trending</h3>');
+                    var body = $('<div class="panel-body" />').appendTo(panel);
+                    body.append(myjson["Top Trending"][1]+' , '+ myjson["Top Trending"][2]+' , '+ myjson["Top Trending"][3]);
+
+
+                    var panel2 = $('<div class="panel panel-default" />').appendTo('#Recomdiv');
+                    var heading2 = $('<div class="panel-heading" />').appendTo(panel2);
+                    heading2.append('<h3 class="panel-title">Recommendation</h3>');
+                    var body2 = $('<div class="panel-body" />').appendTo(panel2);
+                    body2.append(myjson["NeoRecom"][1] +' , ' + myjson["NeoRecom"][2]  );
+                             });
+
+
+
+
+
+});
+
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+
+$(".list-group-item").click(function(event) {
+        var lo_id = event.target.id;
+        var uid = getUrlParameter("uid");
+        var usr = getUrlParameter("username");
+
+        $.ajax({
+        type: "POST",
+        contentType: "application/json; charset=utf-8",
+        url: "/storedata",
+        data: JSON.stringify({LO_ID: lo_id, UID: uid, username:usr, ts: Math.floor(Date.now()), review:"open"}),
+        success: function (data) {
+          //console.log(data.LO_ID);
+          //console.log(data.UID);
+        },
+        dataType: "json"
+        });
+
+    });
+
+
+
+function likebtn_click(btn_id){
+  var uid = getUrlParameter("uid");
+  var usr = getUrlParameter("username");
+
+        $.ajax({
+        type: "POST",
+        contentType: "application/json; charset=utf-8",
+        url: "/storedata",
+        data: JSON.stringify({LO_ID: btn_id, UID: uid, username:usr, ts: Math.floor(Date.now()), review:"like"}),
+        success: function (data) {
+          //console.log(data.LO_ID);
+          //console.log(data.UID);
+        },
+        dataType: "json"
+        });
+}
+
+function signout_clicked(){
+
+        $.ajax({
+        type: "POST",
+        contentType: "application/json; charset=utf-8",
+        url: "/storedata",
+        data: JSON.stringify({LO_ID: btn_id, UID: uid, username:usr, ts: Math.floor(Date.now()), review:"like"}),
+        success: function (data) {
+          //console.log(data.LO_ID);
+          //console.log(data.UID);
+        },
+        dataType: "json"
+        });
+}
+
+</script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/signup.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+<h1>
+      Sign up to Easy Learning Platform
+    </h1>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+<div class="row">
+  <div class="col-md-7">
+
+  <form action="signup" method="post">
+  <div class="form-group">
+    <label for="first">Name</label>
+    <input type="text" class="form-control" name="first" placeholder="Name" value="{{request.form.name}} ">
+  </div>
+   <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" name="username" placeholder="user-name" value="{{request.form.username}}">
+  </div>
+  <div class="form-group">
+    <label for="Password">Password</label>
+    <input type="password"  class="form-control" name="password" placeholder="Password" value="{{request.form.password}}">
+  </div>
+      <div>
+
+      </div>
+
+  <button type="submit"  id="btnlogin" class="btn btn-default">Create Account</button>
+</form>
+  </div>
+        </div>
+      </div>
+
+    </div>
+</html>

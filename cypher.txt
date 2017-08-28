@@ -1,0 +1,13 @@
+Collaborative filtering
+"MATCH (s:Student)-[:like]->(n:Subject)<-[:like]-()-[:like]->(m:Subject)
+WHERE s.name = "Gaurav"
+AND   NOT    (s)-[:like]->(m:Subject)
+RETURN m.name"
+
+
+
+Trending Subjects
+"MATCH (n)-[r]->(m)
+RETURN m, COUNT(r)
+ORDER BY COUNT(r) DESC
+LIMIT 4"

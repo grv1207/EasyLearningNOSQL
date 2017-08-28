@@ -1,0 +1,138 @@
+2017-06-22 19:52:36,053 [ALWAYS] mongo_connector.connector:51 - Starting mongo-connector version: 2.5.1
+2017-06-22 19:52:36,053 [ALWAYS] mongo_connector.connector:51 - Python version: 3.5.2 |Anaconda custom (x86_64)| (default, Jul  2 2016, 17:52:12) 
+[GCC 4.2.1 Compatible Apple LLVM 4.2 (clang-425.0.28)]
+2017-06-22 19:52:36,058 [ALWAYS] mongo_connector.connector:51 - Platform: Darwin-16.6.0-x86_64-i386-64bit
+2017-06-22 19:52:36,058 [ALWAYS] mongo_connector.connector:51 - pymongo version: 3.4.0
+2017-06-22 19:52:36,064 [ALWAYS] mongo_connector.connector:51 - Source MongoDB version: 3.4.5
+2017-06-22 19:52:36,065 [ALWAYS] mongo_connector.connector:51 - Target DocManager: mongo_connector.doc_managers.neo4j_doc_manager version: unknown
+2017-06-22 19:52:56,110 [ERROR] mongo_connector.util:106 - Fatal Exception
+Traceback (most recent call last):
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/util.py", line 104, in wrapped
+    func(*args, **kwargs)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/oplog_manager.py", line 267, in run
+    docman.upsert(doc, ns, timestamp)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/doc_managers/neo4j_doc_manager.py", line 66, in upsert
+    tx.commit()
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/core.py", line 306, in commit
+    return self.post(self.__commit or self.__begin_commit)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/core.py", line 261, in post
+    raise self.error_class.hydrate(error)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/error/core.py", line 54, in hydrate
+    error_cls = getattr(error_module, title)
+AttributeError: module 'py2neo.cypher.error.schema' has no attribute 'ConstraintValidationFailed'
+2017-06-22 19:52:57,094 [ERROR] mongo_connector.connector:398 - MongoConnector: OplogThread <OplogThread(Thread-2, stopped 123145524305920)> unexpectedly stopped! Shutting down
+2017-06-22 19:54:36,574 [ALWAYS] mongo_connector.connector:51 - Starting mongo-connector version: 2.5.1
+2017-06-22 19:54:36,574 [ALWAYS] mongo_connector.connector:51 - Python version: 3.5.2 |Anaconda custom (x86_64)| (default, Jul  2 2016, 17:52:12) 
+[GCC 4.2.1 Compatible Apple LLVM 4.2 (clang-425.0.28)]
+2017-06-22 19:54:36,580 [ALWAYS] mongo_connector.connector:51 - Platform: Darwin-16.6.0-x86_64-i386-64bit
+2017-06-22 19:54:36,580 [ALWAYS] mongo_connector.connector:51 - pymongo version: 3.4.0
+2017-06-22 19:54:36,586 [ALWAYS] mongo_connector.connector:51 - Source MongoDB version: 3.4.5
+2017-06-22 19:54:36,586 [ALWAYS] mongo_connector.connector:51 - Target DocManager: mongo_connector.doc_managers.neo4j_doc_manager version: unknown
+2017-06-22 19:54:56,930 [ERROR] mongo_connector.util:106 - Fatal Exception
+Traceback (most recent call last):
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/util.py", line 104, in wrapped
+    func(*args, **kwargs)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/oplog_manager.py", line 267, in run
+    docman.upsert(doc, ns, timestamp)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/doc_managers/neo4j_doc_manager.py", line 66, in upsert
+    tx.commit()
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/core.py", line 306, in commit
+    return self.post(self.__commit or self.__begin_commit)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/core.py", line 261, in post
+    raise self.error_class.hydrate(error)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/error/core.py", line 54, in hydrate
+    error_cls = getattr(error_module, title)
+AttributeError: module 'py2neo.cypher.error.schema' has no attribute 'ConstraintValidationFailed'
+2017-06-22 19:54:57,611 [ERROR] mongo_connector.connector:398 - MongoConnector: OplogThread <OplogThread(Thread-2, stopped 123145383718912)> unexpectedly stopped! Shutting down
+2017-06-22 20:03:12,418 [ALWAYS] mongo_connector.connector:51 - Starting mongo-connector version: 2.5.1
+2017-06-22 20:03:12,419 [ALWAYS] mongo_connector.connector:51 - Python version: 3.5.2 |Anaconda custom (x86_64)| (default, Jul  2 2016, 17:52:12) 
+[GCC 4.2.1 Compatible Apple LLVM 4.2 (clang-425.0.28)]
+2017-06-22 20:03:12,424 [ALWAYS] mongo_connector.connector:51 - Platform: Darwin-16.6.0-x86_64-i386-64bit
+2017-06-22 20:03:12,425 [ALWAYS] mongo_connector.connector:51 - pymongo version: 3.4.0
+2017-06-22 20:03:12,431 [ALWAYS] mongo_connector.connector:51 - Source MongoDB version: 3.4.5
+2017-06-22 20:03:12,431 [ALWAYS] mongo_connector.connector:51 - Target DocManager: mongo_connector.doc_managers.neo4j_doc_manager version: unknown
+2017-06-22 20:03:32,491 [ERROR] mongo_connector.util:106 - Fatal Exception
+Traceback (most recent call last):
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/util.py", line 104, in wrapped
+    func(*args, **kwargs)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/oplog_manager.py", line 267, in run
+    docman.upsert(doc, ns, timestamp)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/doc_managers/neo4j_doc_manager.py", line 66, in upsert
+    tx.commit()
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/core.py", line 306, in commit
+    return self.post(self.__commit or self.__begin_commit)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/core.py", line 261, in post
+    raise self.error_class.hydrate(error)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/error/core.py", line 54, in hydrate
+    error_cls = getattr(error_module, title)
+AttributeError: module 'py2neo.cypher.error.schema' has no attribute 'ConstraintValidationFailed'
+2017-06-22 20:03:33,464 [ERROR] mongo_connector.connector:398 - MongoConnector: OplogThread <OplogThread(Thread-2, stopped 123145370775552)> unexpectedly stopped! Shutting down
+2017-06-22 20:39:31,263 [ALWAYS] mongo_connector.connector:51 - Starting mongo-connector version: 2.5.1
+2017-06-22 20:39:31,264 [ALWAYS] mongo_connector.connector:51 - Python version: 3.5.2 |Anaconda custom (x86_64)| (default, Jul  2 2016, 17:52:12) 
+[GCC 4.2.1 Compatible Apple LLVM 4.2 (clang-425.0.28)]
+2017-06-22 20:39:31,279 [ALWAYS] mongo_connector.connector:51 - Platform: Darwin-16.6.0-x86_64-i386-64bit
+2017-06-22 20:39:31,279 [ALWAYS] mongo_connector.connector:51 - pymongo version: 3.4.0
+2017-06-22 20:39:31,286 [ALWAYS] mongo_connector.connector:51 - Source MongoDB version: 3.4.5
+2017-06-22 20:39:31,286 [ALWAYS] mongo_connector.connector:51 - Target DocManager: mongo_connector.doc_managers.neo4j_doc_manager version: unknown
+2017-06-22 20:39:51,380 [ERROR] mongo_connector.util:106 - Fatal Exception
+Traceback (most recent call last):
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/util.py", line 104, in wrapped
+    func(*args, **kwargs)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/oplog_manager.py", line 267, in run
+    docman.upsert(doc, ns, timestamp)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/doc_managers/neo4j_doc_manager.py", line 66, in upsert
+    tx.commit()
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/core.py", line 306, in commit
+    return self.post(self.__commit or self.__begin_commit)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/core.py", line 261, in post
+    raise self.error_class.hydrate(error)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/error/core.py", line 54, in hydrate
+    error_cls = getattr(error_module, title)
+AttributeError: module 'py2neo.cypher.error.schema' has no attribute 'ConstraintValidationFailed'
+2017-06-22 20:39:52,338 [ERROR] mongo_connector.connector:398 - MongoConnector: OplogThread <OplogThread(Thread-2, stopped 123145540427776)> unexpectedly stopped! Shutting down
+2017-06-22 20:40:21,958 [ALWAYS] mongo_connector.connector:51 - Starting mongo-connector version: 2.5.1
+2017-06-22 20:40:21,959 [ALWAYS] mongo_connector.connector:51 - Python version: 3.5.2 |Anaconda custom (x86_64)| (default, Jul  2 2016, 17:52:12) 
+[GCC 4.2.1 Compatible Apple LLVM 4.2 (clang-425.0.28)]
+2017-06-22 20:40:21,964 [ALWAYS] mongo_connector.connector:51 - Platform: Darwin-16.6.0-x86_64-i386-64bit
+2017-06-22 20:40:21,964 [ALWAYS] mongo_connector.connector:51 - pymongo version: 3.4.0
+2017-06-22 20:40:21,969 [ALWAYS] mongo_connector.connector:51 - Source MongoDB version: 3.4.5
+2017-06-22 20:40:21,969 [ALWAYS] mongo_connector.connector:51 - Target DocManager: mongo_connector.doc_managers.neo4j_doc_manager version: unknown
+2017-06-22 20:40:42,018 [ERROR] mongo_connector.util:106 - Fatal Exception
+Traceback (most recent call last):
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/util.py", line 104, in wrapped
+    func(*args, **kwargs)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/oplog_manager.py", line 267, in run
+    docman.upsert(doc, ns, timestamp)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/doc_managers/neo4j_doc_manager.py", line 66, in upsert
+    tx.commit()
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/core.py", line 306, in commit
+    return self.post(self.__commit or self.__begin_commit)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/core.py", line 261, in post
+    raise self.error_class.hydrate(error)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/error/core.py", line 54, in hydrate
+    error_cls = getattr(error_module, title)
+AttributeError: module 'py2neo.cypher.error.schema' has no attribute 'ConstraintValidationFailed'
+2017-06-22 20:40:43,001 [ERROR] mongo_connector.connector:398 - MongoConnector: OplogThread <OplogThread(Thread-2, stopped 123145509666816)> unexpectedly stopped! Shutting down
+2017-06-22 20:48:45,069 [ALWAYS] mongo_connector.connector:51 - Starting mongo-connector version: 2.5.1
+2017-06-22 20:48:45,069 [ALWAYS] mongo_connector.connector:51 - Python version: 3.5.2 |Anaconda custom (x86_64)| (default, Jul  2 2016, 17:52:12) 
+[GCC 4.2.1 Compatible Apple LLVM 4.2 (clang-425.0.28)]
+2017-06-22 20:48:45,074 [ALWAYS] mongo_connector.connector:51 - Platform: Darwin-16.6.0-x86_64-i386-64bit
+2017-06-22 20:48:45,075 [ALWAYS] mongo_connector.connector:51 - pymongo version: 3.4.0
+2017-06-22 20:48:45,080 [ALWAYS] mongo_connector.connector:51 - Source MongoDB version: 3.4.5
+2017-06-22 20:48:45,080 [ALWAYS] mongo_connector.connector:51 - Target DocManager: mongo_connector.doc_managers.neo4j_doc_manager version: unknown
+2017-06-22 20:49:05,128 [ERROR] mongo_connector.util:106 - Fatal Exception
+Traceback (most recent call last):
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/util.py", line 104, in wrapped
+    func(*args, **kwargs)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/oplog_manager.py", line 267, in run
+    docman.upsert(doc, ns, timestamp)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/mongo_connector/doc_managers/neo4j_doc_manager.py", line 66, in upsert
+    tx.commit()
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/core.py", line 306, in commit
+    return self.post(self.__commit or self.__begin_commit)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/core.py", line 261, in post
+    raise self.error_class.hydrate(error)
+  File "/Users/gauravvashisth/anaconda/lib/python3.5/site-packages/py2neo/cypher/error/core.py", line 54, in hydrate
+    error_cls = getattr(error_module, title)
+AttributeError: module 'py2neo.cypher.error.schema' has no attribute 'ConstraintValidationFailed'
+2017-06-22 20:49:06,108 [ERROR] mongo_connector.connector:398 - MongoConnector: OplogThread <OplogThread(Thread-2, stopped 123145340108800)> unexpectedly stopped! Shutting down
